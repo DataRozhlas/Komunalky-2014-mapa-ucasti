@@ -19,6 +19,7 @@
 !/www/js/_loadData.js
 !/www/js/echo.js
 /www/script.js
+/www/script.js.gz
 /www/data.js
 /*.sublime-workspace
 azure-upload-settings.json
