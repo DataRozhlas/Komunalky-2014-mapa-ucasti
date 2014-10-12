@@ -50,7 +50,7 @@ window.ig.InfoBar = class InfoBar
       ..text "Mapa volební účasti"
     @helpText = @container.append \span
       ..attr \class \clickInvite
-      ..text "Podrobnosti o obci zobrazíte najetím myši nad obec"
+      ..text "Volební účast v okrsku zobrazíte najetím myši nad okrsek"
 
     stats = @container.append \div
       ..attr \class \stats
