@@ -13,7 +13,7 @@ window.ig.InfoBar = class InfoBar
     @init parentElement
 
   displayData: ({id, nazev, obec_volilo, obec_volicu, mcmo_volilo, mcmo_volicu, senat_volilo, senat_volicu, okrsek_nazev}) ->
-    @nazev.text "#{nazev}" + if okrsek_nazev then " okrsek #{okrsek_nazev}" else ''
+    @nazev.text "#{nazev}" + if okrsek_nazev && obec_volicu then " okrsek #{okrsek_nazev}" else ''
     @container.classed \noData obec_volicu == 0
     if !obec_volicu
       if nazev in bezKandidatky
