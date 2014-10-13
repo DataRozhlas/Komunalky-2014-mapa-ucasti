@@ -2,7 +2,6 @@ document.body.removeChild document.getElementById 'fallback'
 body = d3.select \body
 window.ig.infoBar = new ig.InfoBar body
 window.ig.displayData = (data) ->
-  console.log data
   [id, nazev, obec_volilo, obec_volicu, mcmo_volilo, mcmo_volicu, senat_volilo, senat_volicu, okrsek_nazev] = data
   window.ig.infoBar.displayData {id, nazev, obec_volilo, obec_volicu, mcmo_volilo, mcmo_volicu, senat_volilo, senat_volicu, okrsek_nazev}
 
